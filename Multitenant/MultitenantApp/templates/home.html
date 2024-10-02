@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Upload the file here!</h1>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="text" name="filename" placeholder="Give Filename" />
+            <input type="file" name="file" accept="video/*"/>
+            <input type="submit" name="" id="">
+        </form>
+    </body>
+</html>
